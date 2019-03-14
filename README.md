@@ -1,6 +1,6 @@
 # For Nose,
 # If you don't already use SuperMacro, get the SuperMacro addon at https://github.com/Monteo/SuperMacro
-# Put the SM_Extend.lua file in .../Addons/Interface/Supermacro.
+# Put the SM_Extend.lua file in .../Addons/Interface/Supermacro or copy the contents into your existing SM_Extend.lua if you have one already.
 # Reload UI if you're in game by typing "/script ReloadUI()" or log off and back on.
 # Make a macro and with the text "/script NoseDance()"
 # On the first press you should change stance, on the second press you should cast Recklessness, and on the third press it should go to battle stace.  I included a line to change back to battle stace if for some reason you cast recklessness but it gets dispeled or something but I'm not sure it's necessary.
