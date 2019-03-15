@@ -13,16 +13,16 @@ end
 function NoseDance()
 	local RekCD = RekCdCheck()
 
-	if buffed("Battle Stance","player") and not buffed("Recklessness","player") and RekCD==0 then 
+	if buffed("Battle Stance","player") and not buffed("Recklessness","player") then 
 		CastSpellByName("Berserker Stance",1)
 	end;
-	if buffed("Berserker Stance","player") and not buffed("Recklessness","player") and RekCD==0 then
+	if buffed("Berserker Stance","player") and not buffed("Recklessness","player") then
 		CastSpellByName("Recklessness",1)
 	end;
 	if buffed("Berserker Stance","player") and buffed("Recklessness","player") then
 		CastSpellByName("Battle Stance",1)
 	end;
-	if buffed("Berserker Stance","player") and not buffed("Recklessness","player") and RekCD~=0 then --dispel failsafe, may be unnecessary
+	if buffed("Berserker Stance","player") and not buffed("Recklessness","player") then
 		CastSpellByName("Battle Stance",1)
 	end;
 end
